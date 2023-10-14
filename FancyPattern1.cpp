@@ -20,7 +20,10 @@ Give number
     int n; 
     cout << "Give number "<< endl;
     cin >> n ;
-
+    if(n > 9 ){
+        cout << "Plese put value less than 9. " << endl;
+        return 0;
+    }
     for (int i = 0 ; i < n ; i++){
         int start_num_index = 8-i;
         int num =i+1;
